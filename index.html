@@ -1,0 +1,105 @@
+﻿<!doctype html>
+<html lang="he">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Casa De Cookie</title>
+    <meta name="description" content="La Casa De Cookie" />
+    <meta name="keywords" content="חג המולד, אפייה, משחק, משחק לימודי, למידה, איש לחם זנגביל" />
+    <meta name="author" content="מאי פריד ודולי גוטיה" />
+
+    <!-- CSS -->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+</head>
+
+
+<body>
+    <div id="container">
+
+        <!--הבר העליון עם הלוגו ותפריט הניווט-->
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="index.html">
+                <!--הלוגו של המשחק-->
+                <img id="logo" src="images/logo.png" />
+                <!--שם המשחק שמופיע ליד הלוגו-->
+                <p>La Casa De Cookie</p>
+            </a>
+            <!--סוף הקישור למשחק-->
+
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+            <!--סוף תפריט ניווט-->
+        </header>
+        <!--סוף הבר העליון-->
+
+
+        <!-------------------חלון פופ אפ אודות--------------->
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <span id="game_icon"></span>
+            <p class="bold" id="title">La Casa De Cookie</p>
+
+            <p class="bold">אפיון ופיתוח</pclass="bold">
+
+                <p>דולי גוטיה ומאי פריד</p>
+
+                <p class="bold">במסגרת הקורסים </p>
+
+                <ul>
+                    <li>סביבות לימוד אינטראקטיביות 1</li>
+                    <li>תכנות אינטראקציה ואנימציה 1</li>
+                </ul>
+
+                <p>תש"פ</p>
+
+                <a href="https://www.hit.ac.il/telem/overview" target="_blank">הפקולטה לטכנולוגיות למידה</a>
+
+                <a id="logo_link" href="https://www.hit.ac.il" target="_blank">
+                    <div id="hit_logo"></div>
+                </a>
+
+
+
+
+        </div>
+        <!---------------------סוף חלון אודות----------------------->
+
+
+        <!------------------חלון פופ אפ איך לשחק-------------->
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p>כאן יכנסו התמונות/הסרטון המסביר כיצד לשחק</p>
+        </div>
+        <!----------------------סוף חלון איך לשחק---------------------->
+
+
+        <!------------------האזור של המשחק עצמו-------------->
+        <div id="gameArea" class="">
+            <div id="light_blue">
+            </div>
+            <div id="snow">
+            </div>
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="LaCasaDeCookie.html" frameBorder="0" allowfullscreen="">Browser not
+                compatible.</iframe>
+        </div>
+        <!------------------סוף אזור המשחק-------------->
+    </div>
+    <!--סוף container-->
+</body>
+
+</html>
