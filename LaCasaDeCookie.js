@@ -4841,7 +4841,7 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 		}
 		var question15 = {
 			game: "חיות",
-			quest_img: "giraffe.jpg",
+			quest_img: "images/giraffe.jpg",
 			question: "ממה הג'ירף ניזון?",
 			answers: ["leaves.png", "חרקים", "worms.png", "בשר"]
 		}
@@ -6020,10 +6020,10 @@ lib.properties = {
 	color: "#CCCCCC",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/LaCasaDeCookie_atlas_.png?1582460899398", id:"LaCasaDeCookie_atlas_"},
-		{src:"https://code.jquery.com/jquery-2.2.4.min.js?1582460899903", id:"lib/jquery-2.2.4.min.js"},
-		{src:"components/sdk/anwidget.js?1582460899903", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/combobox.js?1582460899903", id:"an.ComboBox"}
+		{src:"images/LaCasaDeCookie_atlas_.png?1582474961480", id:"LaCasaDeCookie_atlas_"},
+		{src:"https://code.jquery.com/jquery-2.2.4.min.js?1582474962011", id:"lib/jquery-2.2.4.min.js"},
+		{src:"components/sdk/anwidget.js?1582474962011", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/combobox.js?1582474962011", id:"an.ComboBox"}
 	],
 	preloads: []
 };
