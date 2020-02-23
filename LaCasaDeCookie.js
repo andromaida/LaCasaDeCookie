@@ -4026,7 +4026,7 @@ p.nominalBounds = new cjs.Rectangle(-88.4,-53.4,177.9,234);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.mycb = new lib.an_ComboBox({'id': 'mycb', 'label':'', 'items':'dummy, dummy, items, 2, label, 0, , , data, 0, , , 3, בחרו נושא, 0, גוף האדם, 1, חיות, 2', 'value':'0', 'disabled':false, 'visible':true, 'class':'ui-combobox'});
+	this.mycb = new lib.an_ComboBox({'id': 'mycb', 'label':'', 'items':'dummy, dummy, items, 2, label, 0, , , data, 0, , , 4, בחרו נושא, 0, גוף האדם, 1, חיות, 2, שטיפת מוח - בונוס, 3', 'value':'0', 'disabled':false, 'visible':true, 'class':'ui-combobox'});
 
 	this.mycb.setTransform(0,0,1,1,0,0,0,50,11);
 
@@ -4811,6 +4811,7 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 			answers: ["אף ואוזניים", "עיניים ופה", "ידיים ורגליים", "לבלב וכבד"]
 		}
 		
+		
 		// השאלות של המשחק על החיות
 		var question10 = {
 			game: "חיות",
@@ -4866,6 +4867,61 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 			answers: ["רגליים וצוואר ארוכים מאוד", "זנב ארוך במיוחד", "עין אחת חומה ועין אחת ירוקה", "הליכה איטית", "קול מיוחד"]
 		}
 		
+		// משחק בונוס
+		// השאלות של המשחק שטיפת מוח
+		// נלקח מהאתר מכון דוידסון למדע
+		// https://davidson.weizmann.ac.il/column/riddles&quizes
+		// https://davidson.weizmann.ac.il/online/riddlesquizes/%D7%9E%D7%94%D7%99-%D7%93%D7%99%D7%95%D7%93%D7%94-%D7%A9%D7%98%D7%99%D7%A4%D7%AA-%D7%9E%D7%95%D7%97-110
+		var question20 = {
+			game: "שטיפת מוח",
+			question: "איזו קרינה חזקה יותר (בעלת אנרגיה רבה יותר)?",
+			answers: ["קרינת גמא", "קרני רנטגן (קרני X)", "קרינת מיקרו", "קרינה על-סגולה (UV)"]
+		}
+		var question21 = {
+			game: "שטיפת מוח",
+			question: "מה זה טַייְגָה (Taiga)?",
+			answers: ["אזור צמחייה צפוני המאופיין ביערות מחטניים", "מין של אנטילופה צפונית בעלת אף מחודד", "אחד הירחים של כוכב הלכת אורנוס", "סוג של ענני נוצה האופייניים להתחממות פתאומית של האוויר"]
+		}
+		var question22 = {
+			game: "שטיפת מוח",
+			question: "לאיזה תחום שייכות הבעיות של הילברט (Hilbert's problems)?",
+			answers: ["מתמטיקה: זו רשימת בעיות שחלקן טרם נפתרו", "כימיה: זו סדרת אתגרים לפיתוח דרכים יעילות לייצור חומרים חשובים", "פיזיקה: אלה השאלות העיקריות שנותרו פתוחות בעניין מבנה החומר", "אקולוגיה: אלה האתגרים העיקריים בשימור המגוון הביולוגי"]
+		}
+		var question23 = {
+			game: "שטיפת מוח",
+			question: "מתי הופיעו על כדור הארץ צמחי היבשה? ",
+			answers: ["לפני כ-450 מיליון שנה", "לפני כ-4.5 מיליון שנה", "לפני כ-45 מיליון שנה", "לפני כ-4.5 מיליארד שנה"]
+		}
+		var question24 = {
+			game: "שטיפת מוח",
+			question: "מה הסמל הכימי של זהב?",
+			answers: ["Au", "Go", "Ag", "Hg"]
+		}
+		var question25 = {
+			game: "שטיפת מוח",
+			question: "ממה סובלים החולים בפְּרוֹגֶרְיָה (progeria)?",
+			answers: ["הזדקנות מואצת מאוד", "חוסר יכולת לעכל מזון מהצומח", "גוון ירקרק של העור בשל זיהום פטרייתי", "רגישות יתר של מערכת החיסון"]
+		}
+		var question26 = {
+			game: "שטיפת מוח",
+			question: "באיזה תחום מדעי מתרחשת העברה אופקית? ",
+			answers: ["ביולוגיה – הכוונה להעברת גנים שלא מהורים לצאצאים", "כימיה – זו מסירת אלקטרונים בין מולקולות מאוזנות זו לזו מבחינה מרחבית", "אסטרונומיה – זה שלב המעבר של גרמי שמיים מעבר לאופק", "מדעי המחשב – זו העברת מידע במקביל לצרכנים רבים"]
+		}
+		var question27 = {
+			game: "שטיפת מוח",
+			question: "איפה מוצאים מִשְתָנִים קֶפֶאִידִים (Cepheid variables)?",
+			answers: ["באסטרונומיה: אלה כוכבים שבהירותם משתנה במחזוריות קבועה", "בביוכימיה: אלה חומרים המושפעים מקישור לקפאין ונגזרותיו", "בגיאולוגיה: אלה סלעי חוף המשנים את צורתם עקב שחיקת המים", "במדעי המחשב: אלה משתנים המורכבים בעצמם ממערך של משתנים אחרים"]
+		}
+		var question28 = {
+			game: "שטיפת מוח",
+			question: "מהי נַפּוּחִית?",
+			answers: ["דג שגופו מתנפח מאוד כדי להרתיע טורפים בעת סכנה", "צמח שפירותיו מתפוצצים במגע ומתיזים את זרעיהם למרחק", "שמו העברי של בקבוק מעבדה בעל גוף כדורי (בקבוק פירנצה)", "ציפור שיר שהזכרים שלה מנפחים את החזה בזמן שירת החיזור"]
+		}
+		var question29 = {
+			game: "שטיפת מוח",
+			question: "מה זו דְיוֹדָה (Diode)?",
+			answers: ["רכיב אלקטרוני המאפשר זרם חשמלי בכיוון אחד בלבד", "רכיכה בים הפולטת ענני דיו כדי לחמוק מטורפים", "סגסוגת של בדיל וקובלט המשמשת זרז בתגובות כימיות רבות", "ציפור שיר שניצלה מהכחדה בזכות תכנית שימור"]
+		}
 		
 		
 		// מערכים גלובליים
@@ -4906,6 +4962,7 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 		
 		
 		// פוקנציה שמתבצעת בעת שינוי ערך בקומבו
+		// שומרת את הערך של המשחק הנבחר ומאפשרת לחיצה על הכפתור לבחירת משחק
 		function mycb_change(evt) {
 			// שמירת הערך שנבחר בקומבו בוקס - כלומר המספר שמייצג את המשחק
 			mychoice = evt.currentTarget.value;
@@ -4943,7 +5000,9 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 				case "1": // במידה ובחרתי במשחק של גוף האדם
 					return "גוף האדם";
 				case "2": // במידה ובחרתי במשחק של החיות
-					return "חיות";
+					return "חיות";		
+				case "3": // במידה ובחרתי במשחק של החיות
+					return "שטיפת מוח";
 				default:
 					console.log("אין עוד משחקים");
 			}
@@ -4984,8 +5043,6 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 		
 			// שמירת מספר השאלות של המשחק בשביל חישוב הציון
 			totalQuestions = allQuestionsArray.length;
-			console.log("totalQuestions");
-			console.log(totalQuestions);
 		
 			// במידה וזה משחק חוזר - כלומר אין כפתור כזה על הבמה
 			// try- נעטוף ב
@@ -5001,20 +5058,16 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 		
 		//פונקציה שמתחילה את כל המשחק
 		function Start() {
-			$("#light_blue").css("visibility", "hidden");
-			$("#snow").css("visibility", "hidden");
 			CreateBtn(lib.bg, 0, 0, "background"); // יצירת רקע סטטי מלא של הבוצ'ר, מערוך וקרש חיתוך
-			console.log("background");
-			console.log(stage.getChildByName("background"));
 			CreateInstance(gameContainer, 0, 0, stage, "gameContainer"); // יצירת מופע הקונטיינר של משחק והשמתו בבמה - יחזיק את האוביקטים של המשחק
 			CreateBtn(lib.progress_bar, 1130, 290, "progress_bar"); // יצירת בר ההתקדמות של המשחק
 			CreatProgressText(); // יצירת תיבת הטקסט שמראה את התקדמות המשחק במספרים
 			CurrengGameBar(); // יצירת הבר בו מוצג שם המשחק
+			CreatePauseGameButton(); // יצירת כפתור להשהיית משחק
+			CreateTimer(); // יצירת הטיימר של השאלה
 			qnum = parseInt(Math.random() * allQuestionsArray.length); // הגרלת אינדקס רנדומלי של שאלה
 			ShowQuestion(); // הפעלת פונקציה להצגת השאלה הנוכחית
 			ShowAnswers(); // הפעלת פונקציה להצגת המסיחים של השאלה	
-			CreatePauseGameButton(); // יצירת כפתור להשהיית משחק
-			CreateTimer(); // יצירת הטיימר של השאלה
 		}
 		
 		
@@ -5279,12 +5332,42 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 							currentAnswerTXT.y = -(0.33 * btn.nominalBounds.height);
 							break;
 						default:
+							currentAnswerTXT.y = -(0.33 * btn.nominalBounds.height);
 							console.log("לא לא לא להגיע לפה טעות חמורה");
 					}
 				}
 				answersArray.splice(random_index_answer, 1); // הוצאת המסיח שהגרלנו מהמערך - כדי שלא יוגרל שוב
 			}
 		}
+		
+		// פונקציה שמטרתה לבדוק אם לחצו על תשובה נכונה או שגויה
+		function CheckAnswer() {
+			// אם המשחק הופסק - הכפתור לא אמור להיות לחיץ ולכן לא יקרה כלום 
+			// המשחק הופסק = אנחנו רואות את הפריים של המשך משחק
+			if (gameContainer.getChildByName("pause_btn").currentFrame == 2) {
+				return;
+			}
+		
+			clearInterval(timer); // עצירת האינטרוול של הטיימר
+		
+			// הוספת הזמן שלקח לענות על השאלה למשתנה הגלובלי  - הזמן הסופי של המשחק
+			totalTime += (30 - questionTime);
+		
+			// מעלימה את כפתור השהיית המשחק
+			gameContainer.getChildByName("pause_btn").visible = false;
+		
+			var cutting_board = gameContainer.getChildByName("cutting_board"); // שמירת קרש החיתוך
+			cutting_board.removeChild(cutting_board.getChildByName("check_btn")); // הורדת הכפתור לבחירת התשובה מהבמה
+		
+			var btn_index = parseInt(this.name.slice(3)); // הוצאת האינדקס משם הכפתור שנלחץ 
+			// בדיקה האם ענו על התשובה הנכונה	
+			if (randomAnswersArray[btn_index] == allQuestionsArray[qnum].answers[0]) { // השוואה בין המסיח שנלחץ לבין המסיח הנכון מהמערך הגדול
+				RightAnswer(this); //הפעלת פונקציה להצלחה
+			} else { // במידה ולא ענו על התשובה הנכונה
+				WrongAnswer(this); // הפעלת פונקציה שמקבלת את הטקסט של המסיח הלא נכון שנלחץ
+			}
+		}
+		
 		
 		// תשובה נכונה - מציגה משוב להצלחה
 		function RightAnswer(correctBtn) {
@@ -5298,13 +5381,9 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 			// מעלה את מספר נסיונות המענה של השאלה הנוכחית ב-1
 			allQuestionsArray[qnum].tryCounter++;
 		
-			console.log("allQuestionsArray[qnum].tryCounter = " + allQuestionsArray[qnum].tryCounter);
-		
 			// חישוב הציון של השאלה הנוכחית
 			// והוספת ציון השאלה לציון הסופי של המשחק
 			finalScore += 100 / (totalQuestions * allQuestionsArray[qnum].tryCounter);
-		
-			console.log("finalScore = " + finalScore);
 		
 			// splice
 			allQuestionsArray.splice(qnum, 1); // הוצאת השאלה מהמערך - כדי שלא תופיע שוב
@@ -5321,8 +5400,6 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 				// בדיליי מעט בגלל האנימציה החמודה
 				setTimeout(function () {
 					CreateBtn(lib.continue_btn, 125, 300, "final_btn", gameContainer);
-					console.log("final_btn");
-					console.log(gameContainer.getChildByName("final_btn"));
 					var finalButtonHelper = new createjs.ButtonHelper(gameContainer.getChildByName("final_btn")); // שימוש בכלי עזר שמדמה כפתור
 					gameContainer.getChildByName("final_btn").outputTXT.text = "לסיום המשחק";
 					ScaleXY(gameContainer.getChildByName("final_btn"), 1.2);
@@ -5355,8 +5432,6 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 			allQuestionsArray[qnum].tryCounter++;
 			// מעלה את מספר השגיאות הכולל במשחק ב-1
 			totalMistakes++;
-		
-			console.log("allQuestionsArray[qnum].tryCounter = " + allQuestionsArray[qnum].tryCounter);
 		
 			DrawRandomQuestion(); // מגרילה שאלה חדשה
 		
@@ -5429,19 +5504,6 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 			}
 		}
 		
-		
-		// מטרת הפונקציה להגדיר מחדש גודל של אוביקט לפי פיקסלים
-		function SetSize(obj, newWidth = null, newHeight = null) // הקצאת ערך דיפולטיבי לארגומנטים של הפונקציה
-		{
-			if (newWidth != null) { // null אם הכנסנו ערך לתוך הארגומנט - כלומר הוא כבר לא 
-				obj.scaleX = newWidth / obj.nominalBounds.width; // מחשב פי כמה הרוחב החדש גדול מהרוחב הנומינאלי
-			}
-			if (newHeight) { // אפשר לכתוב גם ככה
-				obj.scaleY = newHeight / obj.nominalBounds.height; // מחשב פי כמה הגובה החדש גדול מהגובה הנומינאלי
-			}
-		}
-		
-		
 		// פונקציה לספירת מספר השורות שנכנסות ברוחב שורה מוגדרת מראש
 		function LineCounterInText(fontSize, allText, maxLineWidth) {
 			// מנוע גרפי שקשור לכל מיני אוביקטים דו מימדיים - ביניהם - טקסט
@@ -5464,15 +5526,17 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 			return lineNum;
 		}
 		
+		// מגרילה שאלה רנדומלית
+		// תוך שמירה על כך שלא תופיע אותה שאלה ברצף
 		function DrawRandomQuestion() {
 			if (allQuestionsArray.length == 1) { // בודקת אם השאלה הנוכחית היא השאלה האחרונה
 				qnum = 0;
 			} else { // אם זאת לא הייתה השאלה האחרונה
 				var temp_qnum = parseInt(Math.random() * allQuestionsArray.length); // הגרלת אינדקס רנדומלי לשאלה הבאה
-				while (qnum == temp_qnum) {
+				while (qnum == temp_qnum) { // אם השאלה שהוגרלה זהה לשאלה שהייתה עכשיו
 					temp_qnum = parseInt(Math.random() * allQuestionsArray.length); // הגרלת אינדקס רנדומלי לשאלה הבאה
 				}
-				qnum = temp_qnum;
+				qnum = temp_qnum; 
 			}
 		}
 		
@@ -5539,14 +5603,11 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 		// פונקציה ליצירת כפתור הטיימר  - 30 שניות לשאלה
 		function CreateTimer() {
 			CreateBtn(lib.timer, 115, 160, "timer", gameContainer); // יצירת כפתור הטיימר והעלאתו לבמה
-		
-			console.log("timer");
-			console.log(gameContainer.getChildByName("timer"));
-		
 			questionTime = 30; // הגדרת 30 שניות לשאלה
 			CallTimerInterval(); // קריאה לפונקציה להפעלת הטיימר
 		}
 		
+		// מופעלת כאשר נגמר הזמן לשאלה
 		function TimeOut() {
 			clearInterval(timer); // עצירת האינטרוול של הטיימר
 			DisableDistracts(); // מנטרלת לחיצה על כפתורי המסיחים
@@ -5574,8 +5635,6 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 			// מעלה את מספר נסיונות המענה של השאלה הנוכחית ב-1
 			allQuestionsArray[qnum].tryCounter++;
 		
-			console.log("allQuestionsArray[qnum].tryCounter = " + allQuestionsArray[qnum].tryCounter);
-		
 			//הוספת רקע של נגמר הזמן
 			CreateBtn(lib.time_out_bg, (lib.properties.width / 2), (lib.properties.height / 2), "time_out_bg", gameContainer)
 			var timeOutBg = gameContainer.getChildByName("time_out_bg");
@@ -5595,13 +5654,9 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 		// פונקציה ליצירת כפתור השהיית המשחק
 		function CreatePauseGameButton() {
 			CreateBtn(lib.pause_btn, 115, 264, "pause_btn", gameContainer); // יצירת כפתור להשהיית משחק
-		
-			console.log("pause_btn");
-			console.log(gameContainer.getChildByName("pause_btn"));
-		
 			gameContainer.getChildByName("pause_btn").addEventListener("mousedown", PauseBtnDown); // הוספת אירוע - מתבצעת בעת לחיצה
 			gameContainer.getChildByName("pause_btn").addEventListener("pressup", PauseBtnUp); // הוספת אירוע - מתבצעת בסיום לחיצה	
-			gameContainer.getChildByName("pause_btn").cursor = "pointer";
+			gameContainer.getChildByName("pause_btn").cursor = "pointer"; // משנה נראות של עכבר ללחיץ
 		}
 		
 		// פונקצייה לשינוי הפריים בכפתור ההשהייה למצב התחלתי ווהמשכת המשחק
@@ -5727,41 +5782,10 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 			cutting_board.setChildIndex(event.currentTarget, cutting_board.getNumChildren() - 1);
 		}
 		
-		
-		// פונקציה שמטרתה לבדוק אם לחצו על תשובה נכונה או שגויה
-		function CheckAnswer() {
-			// אם המשחק הופסק - הכפתור לא אמור להיות לחיץ ולכן לא יקרה כלום 
-			// המשחק הופסק = אנחנו רואות את הפריים של המשך משחק
-			if (gameContainer.getChildByName("pause_btn").currentFrame == 2) {
-				return;
-			}
-		
-			clearInterval(timer); // עצירת האינטרוול של הטיימר
-		
-			// הוספת הזמן שלקח לענות על השאלה למשתנה הגלובלי  - הזמן הסופי של המשחק
-			totalTime += (30 - questionTime);
-		
-			// מעלימה את כפתור השהיית המשחק
-			gameContainer.getChildByName("pause_btn").visible = false;
-		
-			var cutting_board = gameContainer.getChildByName("cutting_board"); // שמירת קרש החיתוך
-			cutting_board.removeChild(cutting_board.getChildByName("check_btn")); // הורדת הכפתור לבחירת התשובה מהבמה
-		
-			var btn_index = parseInt(this.name.slice(3)); // הוצאת האינדקס משם הכפתור שנלחץ 
-			// בדיקה האם ענו על התשובה הנכונה	
-			if (randomAnswersArray[btn_index] == allQuestionsArray[qnum].answers[0]) { // השוואה בין המסיח שנלחץ לבין המסיח הנכון מהמערך הגדול
-				RightAnswer(this); //הפעלת פונקציה להצלחה
-			} else { // במידה ולא ענו על התשובה הנכונה
-				WrongAnswer(this); // הפעלת פונקציה שמקבלת את הטקסט של המסיח הלא נכון שנלחץ
-			}
-		}
-		
+		// מנקה את הבמה וקוראת לאנימציית הסיום
 		function FinalAnimation() {
 			Clean(true); // מאפסת משתנים ומנקה הכל
-			$("#light_blue").css("visibility", "visible");
-			$("#snow").css("visibility", "visible");
 			CreateBtn(lib.screen_end_anim, 661.5, 348.4, "final_animation"); // קריאה לאנימציית המשחק
-		
 			setTimeout(function () {
 				FinalScreen(); // קריאה למסך סיכום המשחק
 			}, 1800);
@@ -5955,12 +5979,9 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 			var currentProgressText = "הצלחות: " + "0" + "/" + totalQuestions;
 			CreateBtn(lib.success_counter_btn, 1165, 66, "progress_text"); //הפעלת אנימציית פתיחה
 			stage.getChildByName("progress_text").outputTXT.text = currentProgressText;
-		
-			console.log("progress_text");
-			console.log(stage.getChildByName("progress_text"));
 		}
 		
-		
+		// פונקצייה לאנימציית הפתיחה ומסך הפתיחה
 		function ChooseGameScreen(firstTime = true) {
 			// במידה וזאת ההפעלה הראשונה של המשחק - מפעילה מההתחלה את אנימציית הפתיחה
 			if (firstTime) {
@@ -5983,9 +6004,6 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 			CreateBtn(lib.current_game, 115, 66, "current_game_bar");
 			var gameBar = stage.getChildByName("current_game_bar");
 			gameBar.outputTXT.text = GetGameName();
-			console.log("current_game_bar");
-			console.log(stage.getChildByName("current_game_bar"));
-		
 		}
 	}
 
@@ -6002,10 +6020,10 @@ lib.properties = {
 	color: "#CCCCCC",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/LaCasaDeCookie_atlas_.png?1582398900954", id:"LaCasaDeCookie_atlas_"},
-		{src:"https://code.jquery.com/jquery-2.2.4.min.js?1582398901529", id:"lib/jquery-2.2.4.min.js"},
-		{src:"components/sdk/anwidget.js?1582398901529", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/combobox.js?1582398901529", id:"an.ComboBox"}
+		{src:"images/LaCasaDeCookie_atlas_.png?1582460899398", id:"LaCasaDeCookie_atlas_"},
+		{src:"https://code.jquery.com/jquery-2.2.4.min.js?1582460899903", id:"lib/jquery-2.2.4.min.js"},
+		{src:"components/sdk/anwidget.js?1582460899903", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/combobox.js?1582460899903", id:"an.ComboBox"}
 	],
 	preloads: []
 };
