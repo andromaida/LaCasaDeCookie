@@ -64,25 +64,6 @@
     font-weight: bold;
 }
 
-
-/*
-#light_blue {
-    background-color: #BAF4F2;
-	height: 83.7vh;
-    width: 100%;
-}
-*/
-
-
-/*
-#snow {
-    background-color: #f8f8f8;
-	height: 17.3vh;
-    width: 100%;
-    margin: 0 auto;
-}
-*/
-
 iframe {
     border: 0;
     height: 100%;
@@ -144,9 +125,11 @@ header a {
 }
 
 nav {
-    margin-top: -70px;
+    margin-top: 4px;
     margin-left: 10px;
     direction: rtl;
+    display: inline-block;
+    float: left;
 }
 
 nav ul {
@@ -158,6 +141,14 @@ nav ul li {
     display: inline-block;
     float: left;
     direction: rtl;
+}
+
+nav ul li:hover {
+	text-decoration: underline;
+}
+
+nav > ul > li:nth-child(2):hover {
+	cursor: not-allowed;
 }
 
 nav ul li a {
@@ -208,6 +199,10 @@ nav ul li a:hover {
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+}
+
+header > nav > ul > li > a.howToPlay {
+	pointer-events: none;
 }
 
 @-webkit-keyframes bounceInDown {

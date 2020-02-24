@@ -4790,7 +4790,7 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 		
 		var question6 = {
 			game: "גוף האדם",
-			question: "מי אחראי על העברת הדם ללב ",
+			question: "מי אחראי על העברת הדם ללב?",
 			quest_img: "images/heart.gif",
 			answers: ["הווריד", "העורק", "עמוד השידרה", "הכבד"]
 		}
@@ -4889,7 +4889,7 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 		}
 		var question23 = {
 			game: "שטיפת מוח",
-			question: "מתי הופיעו על כדור הארץ צמחי היבשה? ",
+			question: "מתי הופיעו על כדור הארץ צמחי היבשה?",
 			answers: ["לפני כ-450 מיליון שנה", "לפני כ-4.5 מיליון שנה", "לפני כ-45 מיליון שנה", "לפני כ-4.5 מיליארד שנה"]
 		}
 		var question24 = {
@@ -4904,7 +4904,7 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 		}
 		var question26 = {
 			game: "שטיפת מוח",
-			question: "באיזה תחום מדעי מתרחשת העברה אופקית? ",
+			question: "באיזה תחום מדעי מתרחשת העברה אופקית?",
 			answers: ["ביולוגיה – הכוונה להעברת גנים שלא מהורים לצאצאים", "כימיה – זו מסירת אלקטרונים בין מולקולות מאוזנות זו לזו מבחינה מרחבית", "אסטרונומיה – זה שלב המעבר של גרמי שמיים מעבר לאופק", "מדעי המחשב – זו העברת מידע במקביל לצרכנים רבים"]
 		}
 		var question27 = {
@@ -4982,7 +4982,8 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 			}
 			//catch-למקרה ואירעה שגיאה - נדפיס את השגיאה ב
 			catch (error) {
-				console.log("In function mycb_change - encountered an error");
+				//console.log("In function mycb_change - encountered an error");
+				console.log("In mycb_change - can't remove Event Listener from Start-Game-Button because the event wasn't created yet");
 			}
 		
 			// אם בחרו משחק תקין
@@ -5004,7 +5005,7 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 				case "3": // במידה ובחרתי במשחק של החיות
 					return "שטיפת מוח";
 				default:
-					console.log("אין עוד משחקים");
+					console.log("In GetGameName - there are no more מumeric values representing games");
 			}
 		}
 		
@@ -5016,7 +5017,8 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 				stage.removeChild(stage.getChildByName("start_animation"));
 		
 			} catch (error) {
-				console.log("In function CreateArrayForGame: encountered an error while removing start background from stage");
+				//console.log("In function CreateArrayForGame: encountered an error while removing start background from stage");
+				console.log("In CreateArrayForGame - can't remove Start-Animation from stage because it's not yet created");
 			}
 		
 			var gameName = GetGameName(); // משתנה לשמירת שם המשחק שנבחר
@@ -5038,7 +5040,8 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 				}
 				// כאשר אין יותר שאלות - יציאה מהלולאה
 			} catch (error) {
-				console.log("In function CreateArrayForGame - encountered an error");
+				//console.log("In function CreateArrayForGame - encountered an error");
+				console.log("We are out of questions - in CreateArrayForGame");
 			}
 		
 			// שמירת מספר השאלות של המשחק בשביל חישוב הציון
@@ -5049,7 +5052,8 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 			try {
 				stage.removeChild(stage.getChildByName("forcombo")); // מורידה את הקומבו מהבמה לאחר לחיצה
 			} catch (error) {
-				console.log("In function CreateArrayForGame: encountered an error while removing forcombo from stage");
+				//console.log("In function CreateArrayForGame: encountered an error while removing forcombo from stage");
+				console.log("In CreateArrayForGame - can't remove forcombo (choose game btn) from stage because it doesn't exist");
 			}
 		
 			Start(); // קריאה לפונקציה שמתחילה את המשחק
@@ -5120,7 +5124,7 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 					questionTXTbox.textAlign = "right"; // מרכוז הטקסט
 					break;
 				default:
-					console.log("לא לא לא להגיע לפה טעות חמורה");
+					console.log("In ShowQuestion: the question text is too long - a shorter text should be entered");
 			}
 		
 			// בדיקה האם קיימת תמונה בשאלה
@@ -5221,7 +5225,7 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 					btnYarr = [cutting_board_height * 0.3, cutting_board_height * 0.3, cutting_board_height * 0.3, cutting_board_height * (1 - 0.3), cutting_board_height * (1 - 0.3), cutting_board_height * (1 - 0.3)];
 					break;
 				default:
-					console.log("Do not come here");
+					console.log("מספר המסיחים צריך להיות בטווח 2-6, הינך חורגת מטווח זה");
 			}
 		
 			// יצירת כפתורי המסיחים והוספה לבמה
@@ -5333,7 +5337,7 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 							break;
 						default:
 							currentAnswerTXT.y = -(0.33 * btn.nominalBounds.height);
-							console.log("לא לא לא להגיע לפה טעות חמורה");
+							console.log("In ShowAnswers: the distractor text in btn" + i + " is too long - a shorter text should be entered");
 					}
 				}
 				answersArray.splice(random_index_answer, 1); // הוצאת המסיח שהגרלנו מהמערך - כדי שלא יוגרל שוב
@@ -5552,7 +5556,8 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 					var bmp = currentBtn.getChildByName("answer_image"); // שמירת קיצור התמונה
 					bmp.removeAllEventListeners(); // מורידה אירועי מעבר עכבר על התמונה
 				} catch (err) {
-					console.log("In function DisableDistracts - encountered an error");
+					//console.log("In function DisableDistracts - encountered an error");
+					console.log("In DisableDistracts - can't remove Event Listeners from Answer-Image because it doesn't exist");
 				}
 			}
 		}
@@ -5571,7 +5576,8 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 					bmp.addEventListener("mouseover", ZoomInAnswerImage); // הגדלת תמונה
 					bmp.addEventListener("mouseout", ZoomOutAnswerImage); // הקטנת תמונה
 				} catch (err) {
-					console.log("In function EnableDistracts - encountered an error");
+					//console.log("In function EnableDistracts - encountered an error");
+					console.log("In EnableDistracts - can't add Event Listeners to Answer-Image because it doesn't exist");
 				}
 			}
 		}
@@ -5624,7 +5630,7 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 			}
 			//catch-למקרה ואירעה שגיאה - נדפיס את השגיאה ב
 			catch (error) {
-				console.log("In function TimeOut - encountered an error");
+				console.log("In TimeOut - can't remove Check Button because it doesn't exist");
 			}
 		
 			// הוספת 30 שניות לזמן הסופי של המשחק
@@ -5680,7 +5686,7 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 				question_image.removeEventListener("mouseover", ZoomInOuestionImg); // הסרת הגדלת תמונה
 				question_image.removeEventListener("mouseout", ZoomOutOuestionImg); // הסרת הקטנת תמונה
 			} catch (err) {
-				console.log("In function PauseGame - encountered an error");
+				console.log("In PauseGame - can't remove Event Listeners from Question-Image because it doesn't exist");
 			}
 		
 			//הוספת רקע של הפסקת משחק
@@ -5709,7 +5715,7 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 				question_image.addEventListener("mouseover", ZoomInOuestionImg); // הסרת הגדלת תמונה
 				question_image.addEventListener("mouseout", ZoomOutOuestionImg); // הסרת הקטנת תמונה
 			} catch (err) {
-				console.log("In function ContinueGame - encountered an error");
+				console.log("In ContinueGame - can't add Event Listeners to Question-Image because it doesn't exist");
 			}
 		
 			// מאפשרת לחיצה על כפתור השהיית המשחק
@@ -5767,7 +5773,7 @@ p.nominalBounds = new cjs.Rectangle(-661.5,-1090.8,1341.9,1462.4);
 			}
 			//catch-למקרה ואירעה שגיאה - נדפיס את השגיאה ב
 			catch (error) {
-				console.log("In function ClickOnCookie - encountered an error");
+				console.log("In ClickOnCookie - can't remove Check-Btn because it's not yet created");
 			}
 		
 			event.currentTarget.alpha = 1; // משנה נראות לעוגייה הנבחירת
@@ -6020,10 +6026,10 @@ lib.properties = {
 	color: "#CCCCCC",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/LaCasaDeCookie_atlas_.png?1582474961480", id:"LaCasaDeCookie_atlas_"},
-		{src:"https://code.jquery.com/jquery-2.2.4.min.js?1582474962011", id:"lib/jquery-2.2.4.min.js"},
-		{src:"components/sdk/anwidget.js?1582474962011", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/combobox.js?1582474962011", id:"an.ComboBox"}
+		{src:"images/LaCasaDeCookie_atlas_.png?1582568600579", id:"LaCasaDeCookie_atlas_"},
+		{src:"https://code.jquery.com/jquery-2.2.4.min.js?1582568601222", id:"lib/jquery-2.2.4.min.js"},
+		{src:"components/sdk/anwidget.js?1582568601222", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/combobox.js?1582568601222", id:"an.ComboBox"}
 	],
 	preloads: []
 };
